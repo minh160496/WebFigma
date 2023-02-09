@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./App.module.scss";
+import { Container } from "react-bootstrap";
+import clsx from "clsx";
+
+import GlobalStyle from "@/GlobalStyle/GlobalStyle";
+import Routers from "@/Routers";
+import styles from "@/App.module.scss";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalStyle>
+      <div className={clsx(styles.App)}>
+        <Router>
+          <Routes>
+            {Routers.map((RouteItem, index) => (
+              <Route
+                key={index}
+                path={RouteItem.path}
+                element={<RouteItem.Element />}
+              />
+            ))}
+          </Routes>
+        </Router>
+      </div>
+    </GlobalStyle>
   );
 }
 

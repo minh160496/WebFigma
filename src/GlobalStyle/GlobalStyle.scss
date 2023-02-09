@@ -1,0 +1,487 @@
+@import "~bootstrap/scss/bootstrap";
+@import "../Variables.scss";
+@import url("../assets/Fonts/WEB/css/general-sans.css");
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  --bs-gutter-x: 8rem;
+}
+
+.btn {
+  --bs-btn-padding-x: 48px;
+  --bs-btn-padding-y: 16px;
+  --bs-btn-font-size: 1.6rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 2rem;
+
+  --bs-btn-border-radius: 7rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "GeneralSans-Variable" !important;
+  margin-top: 120px;
+}
+
+a[href] {
+  display: inline-block;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: $font-size-lg !important;
+  line-height: 54px !important;
+}
+
+.container .container {
+  padding: 0 !important;
+}
+
+.max-width-2550 {
+  max-width: 2550px;
+}
+
+.max-width-1240 {
+  max-width: 1240px !important;
+}
+
+.max-width-505 {
+  max-width: 505px !important;
+}
+
+.max-width-400 {
+  max-width: 400px !important;
+}
+
+.h-392 {
+  height: 392px;
+}
+
+.h-600 {
+  height: 600px !important;
+}
+
+.x-center {
+  margin: 0 auto;
+}
+
+.max-width-1240 {
+  max-width: 2240px;
+}
+
+.y-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.gutter-y-5 {
+  --bs-gutter-y: 4.7rem !important;
+}
+
+.letter-space-06 {
+  letter-spacing: 0.4px !important;
+}
+
+// img {
+//   width: 100%;
+//   height: 100%;
+// }
+.mt-6 {
+  margin-top: 6px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-14 {
+  margin-top: 14px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-19 {
+  margin-top: 19px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mt-26 {
+  margin-top: 26px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.mt-38 {
+  margin-top: 38px;
+}
+
+.mt-42 {
+  margin-top: 42px;
+}
+
+.mt-44 {
+  margin-top: 44px;
+}
+
+.mt-45 {
+  margin-top: 45px;
+}
+
+.mt-48 {
+  margin-top: 48px;
+}
+
+.mt-53 {
+  margin-top: 53px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-64 {
+  margin-top: 64px;
+}
+
+.mt-75 {
+  margin-top: 75px;
+}
+
+.mt-78 {
+  margin-top: 78px !important;
+}
+
+.mt-82 {
+  margin-top: 82px;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
+.mt-99 {
+  margin-top: 99px;
+}
+
+.mt-120 {
+  margin-top: 120px;
+}
+
+.mt-155 {
+  margin-top: 155px;
+}
+
+.mt-160 {
+  margin-top: 160px !important;
+}
+
+.mt-165 {
+  margin-top: 165px;
+}
+
+.mt-183 {
+  margin-top: 183px;
+}
+
+.mt-116 {
+  margin-top: 116px;
+}
+
+.pb-82 {
+  padding-bottom: 82px;
+}
+
+.pt-78 {
+  padding-top: 78px !important;
+}
+
+.pt-90 {
+  padding-top: 90px !important;
+}
+
+.pb-90 {
+  padding-bottom: 90px;
+}
+
+.mr-20 {
+  margin-right: 20px !important;
+}
+
+.text-desc {
+  font-size: 1.8rem;
+  font-weight: 400px;
+  line-height: 32px;
+  color: $textDescColor;
+}
+
+.colorDesc {
+  color: $textDescColor !important;
+}
+
+.text-job {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.7rem;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.sub-title {
+  font-weight: 500;
+  font-size: 2.8rem;
+  line-height: 3.7rem;
+}
+
+.max-width-431 {
+  max-width: 431px;
+}
+
+.max-with-505 {
+  max-width: 505px;
+}
+
+.gutter-y-80 {
+  --bs-gutter-y: 7.8rem;
+}
+
+.gutter-y-20 {
+  --bs-gutter-y: 2rem !important;
+}
+
+.set-gutter-x-20 {
+  --bs-gutter-x: 2rem !important;
+}
+
+.font-16 {
+  font-size: 1.6rem !important;
+}
+
+.items-center {
+  display: grid;
+  place-items: center;
+}
+
+.hover-blur:hover {
+  color: $white !important;
+  opacity: 0.8;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.App {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.iconSVG.circle {
+  width: 19px;
+  height: 19px;
+  background-color: $primaryColor;
+  border-radius: 50%;
+}
+
+.iconSVG.tg {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 18px solid transparent;
+  border-left: 18px solid #3461ff;
+  border-bottom: 10px solid transparent;
+}
+
+.color-white {
+  color: $white !important;
+}
+
+.link.link-white {
+  color: $white;
+  a {
+    border-color: $white;
+  }
+}
+
+.navbar-brand {
+  margin-right: 80px;
+}
+
+.navbar.navbar-light.bg-light {
+  background-color: $white !important;
+  padding: 0;
+}
+
+.navbar-brand img:first-child {
+  width: 19px;
+  height: 19px;
+  align-self: center;
+}
+
+.navbar-brand img:last-child {
+  width: 18px;
+  height: 21px;
+  align-self: center;
+}
+
+.navbar-brand,
+.footer .logo h1 {
+  font-size: $font-size-logo !important;
+  font-weight: 700;
+  letter-spacing: -1.8px;
+  margin-bottom: 0 !important;
+}
+
+.me-auto.navbar-nav {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2rem;
+  a.nav-link {
+    padding-right: 40px !important;
+    padding-left: 0;
+  }
+}
+
+.btn-header {
+  padding: 15px 23px;
+  font-size: $font-size-s;
+  font-weight: 500;
+}
+
+.banner {
+  padding-top: 84px;
+  margin-bottom: 46px;
+
+  h1 {
+    max-width: 497px;
+    font-size: $font-size-xl;
+    font-weight: 600;
+    line-height: $line-height-xl;
+    margin-bottom: 24px;
+  }
+}
+
+//cua partners
+
+.logo0 {
+  max-width: 140px;
+}
+
+.logo1 {
+  max-width: 113px;
+}
+
+.logo2 {
+  max-width: 72px;
+}
+
+.logo3 {
+  max-width: 164px;
+}
+
+.logo4 {
+  max-width: 127px;
+}
+
+.logo5 {
+  max-width: 164px;
+}
+
+.logo6 {
+  max-width: 133px;
+}
+
+.logo7 {
+  max-width: 143px;
+}
+
+.logo8 {
+  max-width: 110px;
+}
+
+.logo9 {
+  max-width: 127px;
+}
+
+.font-weight-600 {
+  font-weight: 600 !important;
+}
+
+.font-weight-700 {
+  font-weight: 700 !important;
+}
+
+.link {
+  color: $primaryColor;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 24px;
+  a {
+    color: inherit;
+    font-size: inherit;
+    padding-right: 8px;
+    border-bottom: 2px solid $primaryColor;
+  }
+}
+
+//footer
+.font-foot-sm {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: $textColor;
+}
+
+.foot-dark {
+  height: 119px;
+  background-color: $colorDark;
+  span {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}
+
+.swiper {
+  transition: all ease 0.3s;
+}
+
+.swiper.acive {
+  background-color: $primaryColor;
+  color: $white;
+  padding: 32px;
+
+  span {
+    color: $white;
+  }
+}
